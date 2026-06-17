@@ -1,0 +1,14 @@
+### Variables
+@baseUrl = http://localhost:3000
+
+### Obtener todos los equipos
+GET {{baseUrl}}/equipos
+
+### Buscar equipos por nombre de técnico (Query string)
+GET {{baseUrl}}/equipos/buscar?tecnico=lionel
+
+### Obtener un equipo por ID (Asegúrate de reemplazar <TU_ID> por un ObjectId válido de tu base)
+GET {{baseUrl}}/equipos/<TU_ID>
+
+### Obtener un equipo por ID inexistente
+GET {{baseUrl}}/equipos/66e01a1d1234567890abcdef
